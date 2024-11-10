@@ -5,8 +5,6 @@ const NewsBoard = ({ category, country }) => {
     const [articales, setArticales] = useState([])
     const [errorMessage, setErrorMessage] = useState('');
 
-    console.log(import.meta.env.VITE_API_KEY); // Check if it logs correctly
-
     useEffect(() => {
         const fetchArticles = async () => {
             try {
